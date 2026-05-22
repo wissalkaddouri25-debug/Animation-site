@@ -1,0 +1,202 @@
+    /* --- 1. Reset w Fonts --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; /* K7al ghamiq bhal l-affiche */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* --- 2. Navigation Menu --- */
+nav {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 3px solid #d4af37; /* Smetta d hbi f l-te7t */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4af37; /* Kay-rje3 dhbi melli kat-douz 3lih */
+}
+
+nav a.active {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+}
+
+/* --- 3. Page Accueil (Hero Section) --- */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #2a2215 0%, #121212 100%); /* Radial effect bhal l-affiche */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #d4af37; /* Smiya b l-dhbi */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+    color: #cccccc;
+}
+
+.btn {
+    background-color: #d4af37;
+    color: #121212;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #f3cf55;
+}
+
+/* --- 4. Page À Propos & Container general --- */
+.about-container, .gallery-section, .contact-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* --- 5. Services Grid (À Propos) --- */
+.services-section {
+    margin-top: 5px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.services-section h2 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-grid ul {
+    list-style: none;
+}
+
+.services-grid li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* --- 6. Formulaire Contact --- */
+form {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+}
+
+form label {
+    margin-bottom: 8px;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    background-color: #262626;
+    border: 1px solid #444;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+form button {
+    background-color: #d4af37;
+    color: #121212;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #f3cf55;
+}
+
+/* --- 7. Galerie Grid --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    background-color: #1a1a1a;
+    border: 1px dashed #d4af37;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #aaa;
+}
